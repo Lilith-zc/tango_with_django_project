@@ -76,8 +76,7 @@ TEMPLATES = [
     },
 ]
 
-STATICFILES_DIRS = [STATIC_DIR, ]
-MEDIA_ROOT = MEDIA_DIR
+
 
 WSGI_APPLICATION = 'tango_with_django_project.wsgi.application'
 
@@ -130,4 +129,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [STATIC_DIR, ]
+
 MEDIA_URL = '/media/'
+MEDIA_ROOT = MEDIA_DIR
